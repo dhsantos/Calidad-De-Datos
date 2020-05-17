@@ -1,0 +1,254 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Country",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PHILIPPINES",
+          " PHILIPPINES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PHILIPPINES"
+      },
+      {
+        "from": [
+          "RED SEA",
+          "RED SEA?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RED SEA"
+      },
+      {
+        "from": [
+          "INDIAN OCEAN",
+          "INDIAN OCEAN?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INDIAN OCEAN"
+      },
+      {
+        "from": [
+          "SIERRA LEONE",
+          "Sierra Leone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SIERRA LEONE"
+      },
+      {
+        "from": [
+          "NORTH ATLANTIC OCEAN",
+          "NORTH ATLANTIC OCEAN "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NORTH ATLANTIC OCEAN"
+      },
+      {
+        "from": [
+          "SEYCHELLES",
+          "Seychelles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SEYCHELLES"
+      },
+      {
+        "from": [
+          "NICARAGUA",
+          "NICARAGUA "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NICARAGUA"
+      },
+      {
+        "from": [
+          "SUDAN",
+          "SUDAN?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUDAN"
+      },
+      {
+        "from": [
+          "PACIFIC OCEAN",
+          "PACIFIC OCEAN "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PACIFIC OCEAN"
+      },
+      {
+        "from": [
+          "FIJI",
+          "Fiji"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FIJI"
+      },
+      {
+        "from": [
+          "MEXICO",
+          "MEXICO "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MEXICO"
+      },
+      {
+        "from": [
+          "YEMEN ",
+          "YEMEN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "YEMEN "
+      },
+      {
+        "from": [
+          "EGYPT",
+          "EGYPT "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EGYPT"
+      },
+      {
+        "from": [
+          "TONGA",
+          " TONGA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TONGA"
+      }
+    ],
+    "description": "Mass edit cells in column Country"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Type",
+          "expression": "value",
+          "columnName": "Type",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Country",
+          "expression": "value",
+          "columnName": "Country",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "Country",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "UNKNOWN"
+      }
+    ],
+    "description": "Mass edit cells in column Country"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Country",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "UNITED ARAB EMIRATES (UAE)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "UNITED ARAB EMIRATES"
+      }
+    ],
+    "description": "Mass edit cells in column Country"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Country",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "REUNION ISLAND"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "REUNION"
+      }
+    ],
+    "description": "Mass edit cells in column Country"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "Country",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "COLUMBIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COLOMBIA"
+      }
+    ],
+    "description": "Mass edit cells in column Country"
+  }
+]
