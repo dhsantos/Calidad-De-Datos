@@ -1127,5 +1127,17 @@
       }
     ],
     "description": "Mass edit cells in column Location Type"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Location Type",
+    "newColumnName": "Site Type",
+    "description": "Rename column Location Type to Site Type"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Relative Location",
+    "newColumnName": "Site",
+    "description": "Rename column Relative Location to Site"
   }
 ]
