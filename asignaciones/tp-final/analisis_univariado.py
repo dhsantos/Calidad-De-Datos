@@ -75,7 +75,7 @@ def graficoBoxplot(columna, fullDF):
 	ax.axhline(tercerCuartil, color='r', linestyle='--', lw=2, label ='Cuartil 75: ' + str(tercerCuartil))
 	ax.axhline(minimo, color='b', linestyle='--', lw=2, label ='Minimo: ' + str(minimo))
 	ax.axhline(maximo, color='b', linestyle='--', lw=2, label ='Maximo: ' + str(maximo))
-	ax.axhline(mean, color='g', linestyle=':', lw=2, label ='Promedio: ' + str(mean))
+	#ax.axhline(mean, color='g', linestyle=':', lw=2, label ='Promedio: ' + str(mean))
 
 	plt.title('Boxplot de ' + columna)
 	plt.legend(loc='upper right', fontsize=20)
@@ -191,3 +191,10 @@ if __name__ == "__main__":
 	longitud.to_csv('analisisUnivariado/'+ columna.lower()+'.csv', index = False)
 	graficoPuntos(columna,obras)
 	graficoBoxplot(columna,obras)
+
+#Zona
+	columna = "Zona"
+	longitud = crearDataFrameNumerico(obras, columna)
+	longitud.to_csv('analisisUnivariado/'+ columna.lower()+'.csv', index = False)
+	graficoPuntos(columna,obras)
+	graficoBoxplot(columna,obras)	
